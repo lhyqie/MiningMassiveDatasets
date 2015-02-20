@@ -1,4 +1,3 @@
-# MiningMassiveDatasets
-Learning Coursera MiningMassiveDatasets
-
+""""
+Learning Coursera Mining Massive Datasets
 
