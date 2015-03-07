@@ -5,7 +5,7 @@ Don't know where the bug is , given the difference is small, the bug rarely occu
 You entered:
 
 Your Answer        Score    Explanation
-428827354    Incorrect    0.00    The right answer is 429493953, so you are close. If you are using bands, try changing the size of them.
+428827354    Incorrect    0.00    The right answer is 42949****, so you are close. If you are using bands, try changing the size of them.
 Total        0.00 / 1.00
 
 """
