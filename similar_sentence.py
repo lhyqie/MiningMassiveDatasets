@@ -1,5 +1,5 @@
 """
-My answer is exactly close, but it is vert close.
+My answer is not exactly the same, but it is very close.
 Don't know where the bug is , given the difference is small, the bug rarely occurs
 
 You entered:
