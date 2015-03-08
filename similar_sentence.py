@@ -119,7 +119,7 @@ def pairsFromBuckets(buckets):
                 pairs.add( (sorted_docnames[i], sorted_docnames[j]))
     return pairs
 
-def editdistanceLessThanOne(s1, s2):
+def editdistanceLTEOne(s1, s2):
     if len(s1) > len(s2):
         s1,s2 = s2,s1
     n1 = len(s1)
@@ -208,7 +208,7 @@ def findSimilarPairs(length):
         #    print sents[pair[1]]
         #if diff <= 1:
         #    simPairs.add(pair)
-        if editdistanceLessThanOne(sents[pair[0]], sents[pair[1]]):
+        if editdistanceLTEOne(sents[pair[0]], sents[pair[1]]):
             simPairs.add(pair)
     #for e in buckets1[33839]:
     #    print e, sents[e]
