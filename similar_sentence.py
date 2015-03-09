@@ -8,7 +8,33 @@ Your Answer        Score    Explanation
 428827354    Incorrect    0.00    The right answer is 42949****, so you are close. If you are using bands, try changing the size of them.
 Total        0.00 / 1.00
 
+
+updates:
+    a QQ friend of mine helped me identify the bug.
+    given sentences s1 = {A B C D}, s2 = {A B C}
+    neither of my two hash functions can map them to a same bucket
+    h1:  sum(sent[:len(sent)/2])  
+    h2:  sum(sent[len(sent)/2]:)  
+     h1(s1) = A + B  h1(s2) = A           (mis-match)
+     h2(s1) = C + D  h2(s2) = B + C       (mis-match)
+     
+    so we think a third hash function is needed 
+     h3 : sum(sent[:(len(sent)+1)/2])  
+     h3(s1) = A + B  h3(s2) = A + B       (match)
+    
+    Take an other example with the difference happening in the beginning
+    sentences s1 = {A B C D}, s2 = {B C D}
+     h1(s1) = A + B  h1(s2) = A           (mis-match)
+     h2(s1) = C + D  h2(s2) = C + D       (match)
+     h3(s1) = A + B  h3(s2) = B + C       (mis-match)
+     
+  
+  Due to my limited time, I would rather not revise my program below and ran it for a whole day
+  When my time sheet is more flexible, I will.
+  
 """
+
+
 def sample_file():
     fw = open('sentences_sample.txt','w')
     line_cnt = 0
