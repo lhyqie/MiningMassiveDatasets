@@ -1,7 +1,7 @@
 #To two decimal places, what is the cosine of the angle between the vectors [2,1,1] and [10,-7,1]?
 from math import sqrt
 
-def consine(v1, v2):
+def cosine(v1, v2):
     if len(v1) != len(v2): raise Exception('dim not match')
     dotprod = 0
     for i in xrange(len(v1)):
@@ -12,4 +12,4 @@ def consine(v1, v2):
     return dotprod / (norm1 * norm2)
 
 if __name__ == '__main__':
-    print 'answer is ', consine([2,1,1], [10,-7,1])
+    print 'answer is ', cosine([2,1,1], [10,-7,1])
