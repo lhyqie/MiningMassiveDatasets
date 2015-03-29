@@ -5,7 +5,7 @@ def isPrime(x):
     
 def findPrimeDivisors(x):
     res = []
-    for i in range(2, x):
+    for i in range(2, x+1):
         if isPrime(i) and x % i == 0:
             res.append(i)
     return res
