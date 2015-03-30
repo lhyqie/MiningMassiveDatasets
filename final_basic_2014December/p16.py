@@ -1,5 +1,3 @@
-# since data is separable, the width of boundary is unqiue (minimal)
-# but there might exist multiple w's and b's
+# w b can be different and boundaries can be different
 
-# so answer is c 
- 
+# A
